@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATRAX | Turnkey Interior & Design-Build Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, .nav-link {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
+                        url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+        .nav-sticky {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        .logo-img {
+            max-height: 60px;
+            width: auto;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Header & Navigation -->
+    <nav class="nav-sticky bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <!-- Using the uploaded DATRAX Logo -->
+                    <img src="datrax-logo.jpeg
+" alt="DATRAX Logo" class="logo-img">
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-6">
+                        <a href="#home" class="nav-link text-slate-700 hover:text-blue-900 px-3 py-2 font-semibold transition">Home</a>
+                        <a href="#about" class="nav-link text-slate-700 hover:text-blue-900 px-3 py-2 font-semibold transition">About</a>
+                        <a href="#services" class="nav-link text-slate-700 hover:text-blue-900 px-3 py-2 font-semibold transition">Services</a>
+                        <a href="#projects" class="nav-link text-slate-700 hover:text-blue-900 px-3 py-2 font-semibold transition">Projects</a>
+                        <a href="#contact" class="bg-blue-900 text-white px-5 py-2 rounded-full font-bold hover:bg-blue-800 transition shadow-md">Get a Quote</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-slate-700 p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 p-4 space-y-2">
+            <a href="#home" class="block py-2 text-slate-700 font-semibold">Home</a>
+            <a href="#about" class="block py-2 text-slate-700 font-semibold">About</a>
+            <a href="#services" class="block py-2 text-slate-700 font-semibold">Services</a>
+            <a href="#projects" class="block py-2 text-slate-700 font-semibold">Projects</a>
+            <a href="#contact" class="block py-2 text-blue-900 font-bold">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient min-h-[85vh] flex items-center text-white px-4">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight leading-tight">
+                Business Catalyst for Growth
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 text-slate-200 max-w-3xl mx-auto font-light">
+                Turnkey Interior, Design-Build Infra & Project Execution Services. 
+                From Concept to Completion.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#projects" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-lg font-bold text-lg transition shadow-lg">View Our Portfolio</a>
+                <a href="#services" class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-lg font-bold text-lg transition">Our Expertise</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <div class="max-w-7xl mx-auto px-4 -mt-16 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="glass p-8 rounded-2xl shadow-xl text-center border-b-4 border-blue-900">
+                <i class="fa-solid fa-check-circle text-4xl text-blue-900 mb-4"></i>
+                <h3 class="text-xl font-bold text-slate-800">Quality Control</h3>
+                <p class="text-slate-600 mt-2">Rigorous governance and standards on every project.</p>
+            </div>
+            <div class="glass p-8 rounded-2xl shadow-xl text-center border-b-4 border-blue-900">
+                <i class="fa-solid fa-clock text-4xl text-blue-900 mb-4"></i>
+                <h3 class="text-xl font-bold text-slate-800">On-Time Delivery</h3>
+                <p class="text-slate-600 mt-2">Committed timelines with strategic execution planning.</p>
+            </div>
+            <div class="glass p-8 rounded-2xl shadow-xl text-center border-b-4 border-blue-900">
+                <i class="fa-solid fa-user-shield text-4xl text-blue-900 mb-4"></i>
+                <h3 class="text-xl font-bold text-slate-800">Single Accountability</h3>
+                <p class="text-slate-600 mt-2">One window for design, execution, and handover.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-4">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-blue-900 font-bold tracking-widest uppercase text-sm mb-4">Who We Are</h2>
+                <h3 class="text-4xl font-bold mb-6 text-slate-900">A Professionally Managed Services Organization</h3>
+                <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                    DATRAX offers integrated solutions across business support and project execution. As part of our strategic expansion, we deliver end-to-end solutions from concept, engineering, and planning to execution and final handover.
+                </p>
+                <p class="text-lg text-slate-600 leading-relaxed mb-8">
+                    Led by senior industry professionals with decades of hands-on experience, we execute large-scale corporate, commercial, and infrastructure projects across India.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-center text-slate-800 font-semibold">
+                        <i class="fa-solid fa-circle-check text-blue-600 mr-3"></i> Pan-India Execution Network
+                    </li>
+                    <li class="flex items-center text-slate-800 font-semibold">
+                        <i class="fa-solid fa-circle-check text-blue-600 mr-3"></i> Senior Leadership Governance
+                    </li>
+                    <li class="flex items-center text-slate-800 font-semibold">
+                        <i class="fa-solid fa-circle-check text-blue-600 mr-3"></i> End-to-End Handover Support
+                    </li>
+                </ul>
+            </div>
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80" alt="Interior Work" class="rounded-3xl shadow-2xl">
+                <div class="absolute -bottom-8 -left-8 bg-blue-900 text-white p-8 rounded-2xl hidden lg:block">
+                    <p class="text-4xl font-bold">15+</p>
+                    <p class="text-sm uppercase tracking-wider">Years of Excellence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-slate-100 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-blue-900 font-bold tracking-widest uppercase text-sm mb-4">Our Services</h2>
+                <h3 class="text-4xl font-bold text-slate-900">Comprehensive Project Solutions</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-white p-10 rounded-3xl shadow-lg border border-slate-200 service-card">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-900 text-3xl mb-6">
+                        <i class="fa-solid fa-key"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Turnkey Interiors</h4>
+                    <p class="text-slate-600 leading-relaxed">
+                        End-to-end execution from initial requirement gathering to the final walkthrough and handover of ready-to-use spaces.
+                    </p>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="bg-white p-10 rounded-3xl shadow-lg border border-slate-200 service-card">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-900 text-3xl mb-6">
+                        <i class="fa-solid fa-pencil-ruler"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Design-Build</h4>
+                    <p class="text-slate-600 leading-relaxed">
+                        Integrated model combining architecture, 3D visualization, and concept design with seamless high-speed construction.
+                    </p>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="bg-white p-10 rounded-3xl shadow-lg border border-slate-200 service-card">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-900 text-3xl mb-6">
+                        <i class="fa-solid fa-tools"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Civil & MEP</h4>
+                    <p class="text-slate-600 leading-relaxed">
+                        Expert Mechanical, Electrical, Plumbing, and HVAC systems integrated with professional civil and structural works.
+                    </p>
+                </div>
+                <!-- Service Card 4 -->
+                <div class="bg-white p-10 rounded-3xl shadow-lg border border-slate-200 service-card">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-900 text-3xl mb-6">
+                        <i class="fa-solid fa-building-circle-check"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Project Management</h4>
+                    <p class="text-slate-600 leading-relaxed">
+                        Strategic planning, cost efficiency tracking, safety compliance, and quality assurance during every phase.
+                    </p>
+                </div>
+                <!-- Service Card 5 -->
+                <div class="bg-white p-10 rounded-3xl shadow-lg border border-slate-200 service-card">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-900 text-3xl mb-6">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Maintenance (AMC)</h4>
+                    <p class="text-slate-600 leading-relaxed">
+                        Ensuring long-term operational reliability with dedicated preventive and breakdown maintenance contracts.
+                    </p>
+                </div>
+                <!-- Service Card 6 -->
+                <div class="bg-white p-10 rounded-3xl shadow-lg border border-slate-200 service-card">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-900 text-3xl mb-6">
+                        <i class="fa-solid fa-city"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4">Asset Infra</h4>
+                    <p class="text-slate-600 leading-relaxed">
+                        Developing infrastructure for IT parks, commercial buildings, and industrial facilities with regulatory compliance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Gallery -->
+    <section id="projects" class="py-24 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                <div>
+                    <h2 class="text-blue-900 font-bold tracking-widest uppercase text-sm mb-4">Our Portfolio</h2>
+                    <h3 class="text-4xl font-bold text-slate-900">Featured Projects</h3>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <p class="text-slate-500 max-w-md">Transforming thousands of square feet for leading global brands across India.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Oracle -->
+                <div class="group relative overflow-hidden rounded-3xl aspect-[4/3] shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&q=80" alt="Oracle Office" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent flex flex-col justify-end p-8 text-white">
+                        <p class="text-sm font-bold uppercase tracking-widest mb-2 opacity-80 text-blue-300">Corporate</p>
+                        <h4 class="text-2xl font-bold">Oracle</h4>
+                        <p class="text-sm mt-1">Mumbai | 28,000 Sq. Ft.</p>
+                    </div>
+                </div>
+                <!-- Monsanto -->
+                <div class="group relative overflow-hidden rounded-3xl aspect-[4/3] shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80" alt="Monsanto Office" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent flex flex-col justify-end p-8 text-white">
+                        <p class="text-sm font-bold uppercase tracking-widest mb-2 opacity-80 text-blue-300">Corporate</p>
+                        <h4 class="text-2xl font-bold">Monsanto</h4>
+                        <p class="text-sm mt-1">Bengaluru | 32,000 Sq. Ft.</p>
+                    </div>
+                </div>
+                <!-- Toshiba -->
+                <div class="group relative overflow-hidden rounded-3xl aspect-[4/3] shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&q=80" alt="Toshiba Office" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent flex flex-col justify-end p-8 text-white">
+                        <p class="text-sm font-bold uppercase tracking-widest mb-2 opacity-80 text-blue-300">Corporate</p>
+                        <h4 class="text-2xl font-bold">Toshiba</h4>
+                        <p class="text-sm mt-1">Mumbai | 14,500 Sq. Ft.</p>
+                    </div>
+                </div>
+                <!-- J P Morgan -->
+                <div class="group relative overflow-hidden rounded-3xl aspect-[4/3] shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&q=80" alt="J P Morgan Office" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent flex flex-col justify-end p-8 text-white">
+                        <p class="text-sm font-bold uppercase tracking-widest mb-2 opacity-80 text-blue-300">Financial</p>
+                        <h4 class="text-2xl font-bold">J P Morgan</h4>
+                        <p class="text-sm mt-1">Mumbai | 50,000 Sq. Ft.</p>
+                    </div>
+                </div>
+                <!-- Ganesh Acharya -->
+                <div class="group relative overflow-hidden rounded-3xl aspect-[4/3] shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=80" alt="Residential" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent flex flex-col justify-end p-8 text-white">
+                        <p class="text-sm font-bold uppercase tracking-widest mb-2 opacity-80 text-blue-300">Residential</p>
+                        <h4 class="text-2xl font-bold">Mr. Ganesh Acharya</h4>
+                        <p class="text-sm mt-1">Andheri | 7,000 Sq. Ft. (Modern)</p>
+                    </div>
+                </div>
+                <!-- Placeholder for dynamic footer logo -->
+                <div class="group relative overflow-hidden rounded-3xl aspect-[4/3] shadow-lg flex items-center justify-center bg-blue-900">
+                    <div class="text-center p-8">
+                        <img src="datrax-logo.jpeg
+" alt="DATRAX Logo" class="mx-auto mb-4 max-h-16 invert brightness-0">
+                        <h4 class="text-xl font-bold text-white mb-2">Request PDF Profile</h4>
+                        <p class="text-blue-200 mb-6 text-sm italic">Detailed case studies available</p>
+                        <a href="#contact" class="inline-block border border-white/40 text-white px-6 py-2 rounded-full hover:bg-white hover:text-blue-900 transition">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-slate-900 text-white px-4 overflow-hidden relative">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 relative z-10">
+            <div>
+                <h2 class="text-blue-400 font-bold tracking-widest uppercase text-sm mb-4">Contact Us</h2>
+                <h3 class="text-4xl font-bold mb-8">Ready to start your project?</h3>
+                <p class="text-lg text-slate-400 mb-12 max-w-md">
+                    Discuss your turnkey interior and design-build requirements with our expert team today.
+                </p>
+                <div class="space-y-8">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-blue-400 text-xl mr-6">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm uppercase tracking-wider text-slate-500 mb-1">Email ID</p>
+                            <a href="mailto:sales@datrax.in" class="text-xl font-bold hover:text-blue-400 transition">sales@datrax.in</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-blue-400 text-xl mr-6">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm uppercase tracking-wider text-slate-500 mb-1">Contact Number</p>
+                            <a href="tel:9372716148" class="text-xl font-bold hover:text-blue-400 transition">9372716148</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-blue-400 text-xl mr-6">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm uppercase tracking-wider text-slate-500 mb-1">Follow Us</p>
+                            <div class="flex space-x-6 mt-2">
+                                <a href="https://www.linkedin.com/showcase/datrax-turnkey-interior-design-build-project-execution" target="_blank" class="text-2xl hover:text-blue-400 transition"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://www.facebook.com/datraxturnkeyinteriordesignbuildproject" target="_blank" class="text-2xl hover:text-blue-400 transition"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/datraxturnkeyinteriorprojects/" target="_blank" class="text-2xl hover:text-blue-400 transition"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-3xl p-10 text-slate-900 shadow-2xl">
+                <form id="contact-form" onsubmit="return handleFormSubmit(event)">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">Full Name</label>
+                            <input type="text" required class="w-full bg-slate-100 border border-slate-200 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-blue-900 transition" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">Email Address</label>
+                            <input type="email" required class="w-full bg-slate-100 border border-slate-200 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-blue-900 transition" placeholder="john@company.com">
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Company Name</label>
+                        <input type="text" class="w-full bg-slate-100 border border-slate-200 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-blue-900 transition" placeholder="Your Business Ltd.">
+                    </div>
+                    <div class="mb-8">
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Message</label>
+                        <textarea rows="4" required class="w-full bg-slate-100 border border-slate-200 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-blue-900 transition" placeholder="Tell us about your project requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-900 text-white font-bold py-5 rounded-xl hover:bg-blue-800 transition shadow-lg text-lg">Send Message</button>
+                    <div id="form-message" class="mt-4 text-center hidden font-bold text-green-600">Message sent successfully! We'll get back to you shortly.</div>
+                </form>
+            </div>
+        </div>
+        <!-- Decorative Background Circle -->
+        <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-500 py-12 border-t border-white/5 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                <div class="mb-6 md:mb-0">
+                    <img src="datrax-logo.jpeg
+" alt="DATRAX Logo" class="max-h-12 brightness-0 invert opacity-70">
+                </div>
+                <div class="flex space-x-8 text-sm uppercase tracking-widest">
+                    <a href="#about" class="hover:text-white transition">About</a>
+                    <a href="#services" class="hover:text-white transition">Services</a>
+                    <a href="#projects" class="hover:text-white transition">Projects</a>
+                    <a href="#contact" class="hover:text-white transition">Contact</a>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 text-center text-xs">
+                <p>© 2025 DATRAX Turnkey Interior. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Form Handling
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const message = document.getElementById('form-message');
+            message.classList.remove('hidden');
+            event.target.reset();
+            setTimeout(() => {
+                message.classList.add('hidden');
+            }, 5000);
+            return false;
+        }
+
+        // Smooth Scroll Offset Adjustment
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                mobileMenu.classList.add('hidden');
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
